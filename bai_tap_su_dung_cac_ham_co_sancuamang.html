@@ -6,8 +6,8 @@
 </head>
 <body>
 <script>
-    //myColor = ["Red", "Green", "White", "Black"];
-    //document.write('"' + myColor.join(',') + '"');
+    myColor = ["Red", "Green", "White", "Black"];
+   document.write('"' + myColor.join(',') + '"');
 </script>
 <br>
 <script>
@@ -24,13 +24,29 @@
     }
     document.write(z.join(""))
 </script>
+<br>
 <script>
-   let a = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
-   let b = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
-   let c = prompt('nhap vao 1 day chu');
-   for (let i = 0;i<c.length;i++){
-       if (c[i] == )
-   }
+    let str = 'The Quick Brown Fox';
+    let UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    let LOWER = 'abcdefghijklmnopqrstuvwxyz';
+    let result = [];
+
+    for(let x=0; x<str.length; x++)
+    {
+        if(UPPER.indexOf(str[x]) !== -1)
+        {
+            result.push(str[x].toLowerCase());
+        }
+        else if(LOWER.indexOf(str[x]) !== -1)
+        {
+            result.push(str[x].toUpperCase());
+        }
+        else
+        {
+            result.push(str[x]);
+        }
+    }
+    document.write(result.join(''));
 </script>
 </body>
 </html>
